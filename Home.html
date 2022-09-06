@@ -11,23 +11,144 @@
     <link rel="stylesheet" href="./CSS/Footer.css">
     <link rel="stylesheet" href="./CSS/Home.css">
     <script src="./Js/Header.js"></script>
+    <script>
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 0
+            }
+            //tự động chuyển đổi slide sau 5s
+            setTimeout(showSlides, 10000);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
 </head>
 
 <body>
     <main-header></main-header>
     <div class="home">
-        <div class="all-slide">
-            <div class="top-slide">
-            <div class="slide-active"><img src="./Image/Home/danh-bay-mo-thua-giam-can-hieu-qua-desktop-1660577509MjOfv.jpg"></div>
-            <div class="slide"><img src="./Image/Home/so-huu-the-tap-nhan-van-quyen-loi-1656402471jGy7m.jpg"></div>
-            <div class="slide"><img src="./Image/Home/thay-doi-hinh-the-size-desktop-1661410061AZnPp.jpg"></div>
-            <div class="slide"><img src="./Image/Home/thien-duong-yoga-bay-desktop-1660882087hG9Nv.jpg"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./Image/Home/danh-bay-mo-thua-giam-can-hieu-qua-desktop-1660577509MjOfv.jpg"
+                    style="width:100%;height:700px;">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./Image/Home/so-huu-the-tap-nhan-van-quyen-loi-1656402471jGy7m.jpg"
+                    style="width:100%;height:700px;">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./Image/Home/thay-doi-hinh-the-size-desktop-1661410061AZnPp.jpg"
+                    style="width:100%;height:700px;">
+
+            </div>
+            <div class="mySlides fade">
+                <img src="./Image/Home/thien-duong-yoga-bay-desktop-1660882087hG9Nv.jpg"
+                    style="width:100%;height:700px;">
+                <div class="text">Nội dung caption của slide thứ 3!</div>
+            </div>
         </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-       
-      
+
+        <div class="home2">
+            <div class="home2-1">
+                
+                    <h1 style="color: green;">Dịch Vụ Cao Cấp</h1>
+                
+                <hr>
+                
+                    <h3 style="color: black;">Chương trình tập luyện được CÁ NHÂN HÓA và kết hợp chế độ dinh dưỡng khoa
+                        học là bí quyết để chúng tôi có được tỷ lệ hội viên đạt được kết quả tập luyện cao nhất Việt Nam
+                    </h3>
+                
+
+                <div class="home2-1-1">
+                    <div class="gym">
+                        <img src="./Image/Home/bai-tap-gym-cho-nguoi-moi-bat-dau-4.webp">
+                        <div class="gym1">
+                            <h3>GYM</h3>
+                            <p>Tập Gym là xu hướng và phong trào nở rộ trong giới trẻ, giúp bạn tăng cân, tăng cơ, giảm
+                                mỡ, có một cơ thể cân đối và săn chắc, tự tin hơn, đẹp hơn, và tìm được bạn đời nhờ gym
+                            </p>
+                            <button type="button">Tìm hiểu thêm</button>
+                        </div>
+                    </div>
+                    <div class="yoga">
+                        <img src="./Image/Home/hatha-yoga.jpg">
+                        <div class="gym1">
+                            <h3>YOGA</h3>
+                            <p>Yoga xây dựng sức mạnh, nhận thức và sự hài hòa trong cả tinh thần và thể chất. Hầu hết
+                                các buổi tập thường bao gồm các bài tập thở, thiền và các tư thế giả giúp kéo căng và
+                                linh hoạt các nhóm cơ. </p>
+                            <button type="button">Tìm hiểu thêm</button>
+                        </div>
+                    </div>
+                    <div class="dance">
+                        <img src="./Image/Home/Two_dancers.jpg">
+                        <div class="gym1">
+                            <h3>DANCE</h3>
+                            <p>Nhảy múa hay vũ đạo là một loại hình nghệ thuật biểu diễn bao gồm các chuỗi chuyển động
+                                có chủ đích của con người. Phong trào này có giá trị thẩm mỹ và mang tính biểu tượng.
+                            </p>
+                            <button type="button">Tìm hiểu thêm</button>
+                        </div>
+                    </div>
+                    <div class="boxing">
+                        <img src="./Image/Home/kickboxing-01.jpg">
+                        <div class="gym1">
+                            <h3>KICKBOXING</h3>
+                            <p>Kickboxing là một nhóm các môn thể thao chiến đấu độc lập dựa trên đá và đấm. Kickboxing
+                                được thực hành để tự vệ, tập thể dục, hay như một môn thể thao tiếp xúc</p>
+                            <button type="button">Tìm hiểu thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home2-2">
+                <h2>WARRIOR GYM - TRUNG TÂM TẬP LUYỆN TIÊU CHUẨN QUỐC TẾ</h2>
+                <hr style="color: green;">
+                <h3>Hệ thống phòng tập không gian xanh, đầy đủ trang thiết bị hiện đại cùng huấn luyện viên chuyên nghiệp tạo nên môi trường lí tưởng để mang đến hiệu quả tập luyện cao nhất cho hội viên</h3>
+            <div class="home2-2-1">
+                <div class="home2-2-1-1"></div>
+                <div class="home2-2-1-2">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
+
 </body>
-<footer>
+<!-- <footer>
     <main-footer></main-footer>
-</footer>
+</footer> -->

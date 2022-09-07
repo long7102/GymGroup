@@ -59,11 +59,11 @@
  .home2{
    width: 100%;
    padding: 60px;
-   height: 1500px;
-   text-align: center;
+   height: 2500px;
    background-image: url(../background.jpg);
    background-repeat: repeat;
    background-size: contain;
+   text-align: center;
  }
  .home2-1-1{
    display: flex;
@@ -144,11 +144,10 @@ margin-left: 12.5px;
  }
  .home2-2{
    width: 100%;
-   height: 850px;
+   height: 815px;
+   margin-left: 75px;
    /* padding: 60px; */
    /* margin: 0px 100px; */
-   
-   text-align: center;
  }
  .home2-2 h2{
    text-align: center;
@@ -162,3 +161,68 @@ margin-left: 12.5px;
  .home2-2-1{
    display: flex;
  }
+ .home2-2-1-2{
+  display: flex;
+ }
+ .camket{
+  margin-left: 45px;
+  width: 600px;
+  height: 550px;
+  /* padding: 0px 15px; */
+  line-height: 23px;
+ }
+ .camket .camket1{
+  width: 600px;
+  height: 100px;
+  
+  text-align: left;
+  margin-bottom: -10px;
+ }
+ .camket1 h3{
+  margin-top: 5px;
+ }
+ .camket1 p{
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+ }
+.home2-3{
+  width: 100%;
+  height: 450px;
+}
+.home2-3-1{
+  width: 1300px;
+  height: 430px;
+  display: flex;
+  margin: 0 100px;
+}
+.home2-3-1-1 {
+  width: 265px;
+  height: 300px;
+  margin-right: 25px;
+
+}
+.home2-3-1-1 p{
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  justify-content:end;
+  margin-top: -4px;
+}
+.home2-3-1-1 img{
+  width: 265px;
+  height: 265px;
+}
+.home2-3-2{
+  margin-left: 95px;
+  display: flex;
+}
+.home2-3-2-1{
+  width: 260px;
+  height: 140px;
+  background-color: #038625;
+  color: white;
+  margin-right: 30px;
+  font-size: 17px;
+}

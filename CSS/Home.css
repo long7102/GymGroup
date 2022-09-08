@@ -146,7 +146,7 @@ margin-left: 12.5px;
    width: 100%;
    height: 815px;
    margin-left: 75px;
-   /* padding: 60px; */
+   padding-right: 60px;
    /* margin: 0px 100px; */
  }
  .home2-2 h2{
@@ -182,6 +182,7 @@ margin-left: 12.5px;
   margin-top: 5px;
  }
  .camket1 p{
+  
   margin-top: -10px;
   margin-bottom: 5px;
   font-size: 17px;
@@ -195,6 +196,7 @@ margin-left: 12.5px;
   height: 430px;
   display: flex;
   margin: 0 100px;
+  font-family: monospace;
 }
 .home2-3-1-1 {
   width: 265px;
@@ -217,6 +219,11 @@ margin-left: 12.5px;
 .home2-3-2{
   margin-left: 95px;
   display: flex;
+  
+}
+.home2-3-2 p{
+  font-family: monospace;
+  font-size: 15px;
 }
 .home2-3-2-1{
   width: 260px;
@@ -256,6 +263,7 @@ margin-left: 12.5px;
   display: flex;
   width: 1200px;
   height: 400px;
+  margin-bottom: 150px;
 }
 .home3-2-1{
   width: 250px;

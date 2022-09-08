@@ -59,7 +59,7 @@
  .home2{
    width: 100%;
    padding: 60px;
-   height: 2500px;
+   height: 2200px;
    background-image: url(../background.jpg);
    background-repeat: repeat;
    background-size: contain;
@@ -188,7 +188,7 @@ margin-left: 12.5px;
  }
 .home2-3{
   width: 100%;
-  height: 450px;
+  height: 600px;
 }
 .home2-3-1{
   width: 1300px;
@@ -225,4 +225,68 @@ margin-left: 12.5px;
   color: white;
   margin-right: 30px;
   font-size: 17px;
+}
+.home3{
+  width: 100%;
+  height: 650px;
+  background-image: url(../banner-xanh-la.jpg);
+  background-repeat: none;
+  background-position: 100%;
+}
+.home3-1{
+  width: 1300px;
+  height: 200px;
+  margin-left: 80px;
+}
+.home3-1 h2{
+  text-align: center;
+  color: #038625;
+  font-weight: 700;
+  padding-top: 50px;
+  font-family: sans-serif;
+}
+.home3-1 p{
+  width: 850px;
+  text-align: center;
+  color: white;
+  margin-left: 230px;
+  font-size: 17px;
+}
+.home3-2{
+  display: flex;
+  width: 1200px;
+  height: 400px;
+}
+.home3-2-1{
+  width: 250px;
+  height: 250px;
+  /* margin-left: 150px; */
+  margin-right: 25px;
+}
+.home3-2-1 img{
+  width: 250px;
+  height: 250px;
+}
+.home3-2-1 h2{
+  padding-top: 5px;
+  font-family: monospace;
+  text-transform: uppercase;
+  background-color: #038625;
+  height: 35px;
+  color: white;
+  text-align: center;
+  margin-top: -5px;
+}
+.home3-2-1 h4{
+  padding-top: 5px;
+  font-family: monospace;
+  /* text-transform: uppercase; */
+  background-color: #ffff;
+  height: 40px;
+  color: black;
+  text-align: center;
+  margin-top: -18px;
+  border-color:#d2d7e2;
+border-style:solid none none;
+border-width:1px 0px 0px;
 }
